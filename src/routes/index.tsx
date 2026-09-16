@@ -78,7 +78,7 @@ function Index() {
           <p className="text-xs uppercase text-muted-foreground">The archive is growing</p>
            <h2 className="mt-3 font-display text-5xl md:text-7xl">More work........<em></em></h2>
           <div className="mt-12 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
-             {["Medical Catalogue", "Social Media Design", "Editorial Design", "Illustration"].map((item, i) => {
+             {["Medical Catalogue", "Social Media Design"].map((item, i) => {
                const imageTile = item === "Medical Catalogue"
                  ? { src: medicalCatalogueAsset.url, w: 972, h: 1220, alt: "Medical catalogue — Azoth Biotech Cordyceps militaris technical data sheet cover" }
                  : item === "Social Media Design"
