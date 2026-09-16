@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import dogWeddingAsset from "@/assets/dog-wedding-real.png.asset.json";
+import dogWeddingSocial1Asset from "@/assets/dog-wedding-social-1.jpg.asset.json";
+import dogWeddingSocial2Asset from "@/assets/dog-wedding-social-2.jpg.asset.json";
 import { DogDoodle, PageShell } from "@/components/portfolio-shell";
 
 export const Route = createFileRoute("/work/dog-wedding")({
