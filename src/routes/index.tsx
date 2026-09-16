@@ -78,10 +78,15 @@ function Index() {
           <p className="text-xs uppercase text-muted-foreground">The archive is growing</p>
            <h2 className="mt-3 font-display text-5xl md:text-7xl">More work........<em></em></h2>
           <div className="mt-12 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
-             {["Medical Catalogue", "Social Media Design", "Editorial Design", "Illustration"].map((item, i) =>
-               item === "Social Media Design" ? (
+             {["Medical Catalogue", "Social Media Design", "Editorial Design", "Illustration"].map((item, i) => {
+               const imageTile = item === "Medical Catalogue"
+                 ? { src: medicalCatalogueAsset.url, w: 972, h: 1220, alt: "Medical catalogue — Azoth Biotech Cordyceps militaris technical data sheet cover" }
+                 : item === "Social Media Design"
+                 ? { src: smvitPosterAsset.url, w: 1080, h: 1350, alt: "Social media poster design for SMVIT Debsoc — Sneha Verma, core adjudicator announcement" }
+                 : null;
+               return imageTile ? (
                  <div key={item} className="group relative overflow-hidden border-b border-r border-border">
-                   <img src={smvitPosterAsset.url} width={1080} height={1350} loading="lazy" alt="Social media poster design for SMVIT Debsoc — Sneha Verma, core adjudicator announcement" className="aspect-[4/3] w-full object-cover md:aspect-[3/4]" />
+                   <img src={imageTile.src} width={imageTile.w} height={imageTile.h} loading="lazy" alt={imageTile.alt} className="aspect-[4/3] w-full object-cover md:aspect-[3/4]" />
                    <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-foreground/80 to-transparent p-5 md:p-7">
                      <h3 className="font-display text-3xl text-background">{item}</h3>
                      <span className="text-xs text-background/70">0{i + 3}</span>
@@ -92,8 +97,8 @@ function Index() {
                    <span className="text-xs text-muted-foreground">0{i + 3}</span>
                    <div><h3 className="font-display text-3xl">{item}</h3><p className="mt-2 text-xs uppercase text-muted-foreground">{"\n"}</p></div>
                  </div>
-               )
-             )}
+               );
+             })}
           </div>
         </div>
       </section>
