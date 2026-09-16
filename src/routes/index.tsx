@@ -52,7 +52,7 @@ function Index() {
           </div>
           <div className="mt-12 grid gap-16 md:grid-cols-12 md:gap-y-28">
             <Link to="/work/crockey" className="group md:col-span-8">
-              <div className="overflow-hidden bg-paper"><img src={crockeyProjectAsset.url} width={768} height={963} alt="Crockey curated ceramic collection with blossom branches" className="aspect-[4/3] w-full object-cover transition-all duration-700 group-hover:scale-100 group-hover:object-contain" /></div>
+              <div className="overflow-hidden bg-paper"><img src={crockeyProjectAsset.url} width={969} height={1214} alt="Crockey curated ceramic collection with blossom branches" className="aspect-[969/1214] w-full object-cover" /></div>
               <div className="mt-5 flex items-start justify-between border-t border-background/30 pt-4">
                 <div><p className="text-xs uppercase text-background/60">01 · Catalogue Design</p><h3 className="mt-1 font-display text-4xl md:text-6xl">Crockey</h3></div>
                 <span className="text-2xl"><ArrowMark /></span>
