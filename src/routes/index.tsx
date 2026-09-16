@@ -74,7 +74,7 @@ function Index() {
       <section className="px-5 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-screen-2xl">
           <p className="text-xs uppercase text-muted-foreground">The archive is growing</p>
-          <h2 className="mt-3 font-display text-5xl md:text-7xl">More work, <em>soon.</em></h2>
+           <h2 className="mt-3 font-display text-5xl md:text-7xl">More work, <em></em></h2>
           <div className="mt-12 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
             {["Brand Identity", "Social Media Design", "Editorial Design", "Illustration"].map((item, i) => (
               <div key={item} className="group flex aspect-[4/3] flex-col justify-between border-b border-r border-border p-5 transition-colors hover:bg-peach/40 md:aspect-[3/4] md:p-7">
