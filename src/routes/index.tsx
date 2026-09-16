@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import crockeyProjectAsset from "@/assets/crockey-real-project.png.asset.json";
-import dogWeddingAsset from "@/assets/dog-wedding-real.png.asset.json";
-import portraitAsset from "@/assets/ananya-photo.jpg.asset.json";
-import smvitPosterAsset from "@/assets/smvit-poster.jpg.asset.json";
-import medicalCatalogueAsset from "@/assets/medical-catalogue.png.asset.json";
+import crockeyProjectAsset from "@/assets/crockey-real-project.png";
+import dogWeddingAsset from "@/assets/dog-wedding-real.png";
+import portraitAsset from "@/assets/ananya-photo.jpg";
+import smvitPosterAsset from "@/assets/smvit-poster.jpg";
+import medicalCatalogueAsset from "@/assets/medical-catalogue.png";
 import { ArrowMark, DogDoodle, PageShell } from "@/components/portfolio-shell";
 
 export const Route = createFileRoute("/")({
@@ -54,7 +54,7 @@ function Index() {
           </div>
           <div className="mt-12 grid gap-16 md:grid-cols-12 md:gap-y-28">
             <Link to="/work/crockey" className="group md:col-span-8">
-              <div className="overflow-hidden bg-paper"><img src={crockeyProjectAsset.url} width={969} height={1214} alt="Crockey curated ceramic collection with blossom branches" className="aspect-[969/1214] w-full object-cover" /></div>
+              <div className="overflow-hidden bg-paper"><img src={crockeyProjectAsset} width={969} height={1214} alt="Crockey curated ceramic collection with blossom branches" className="aspect-[969/1214] w-full object-cover" /></div>
               <div className="mt-5 flex items-start justify-between border-t border-background/30 pt-4">
                  <div><p className="text-xs uppercase text-background/60">01 · Catalogue Design</p><h3 className="mt-1 font-display text-4xl md:text-6xl">Crockery Catalogue&nbsp;</h3></div>
                 <span className="text-2xl"><ArrowMark /></span>
@@ -62,7 +62,7 @@ function Index() {
               <p className="mt-3 max-w-lg text-sm leading-relaxed text-background/70">A catalogue designed to bring products, visuals and information together through a clean editorial layout.</p>
             </Link>
             <Link to="/work/dog-wedding" className="group md:col-span-4 md:col-start-9 md:mt-40">
-              <div className="overflow-hidden bg-paper"><img src={dogWeddingAsset.url} width={748} height={977} loading="lazy" alt="The Dog Wedding poster — two dogs in wedding attire under a floral arch" className="aspect-[748/977] w-full object-cover" /></div>
+              <div className="overflow-hidden bg-paper"><img src={dogWeddingAsset} width={748} height={977} loading="lazy" alt="The Dog Wedding poster — two dogs in wedding attire under a floral arch" className="aspect-[748/977] w-full object-cover" /></div>
               <div className="mt-5 flex items-start justify-between border-t border-background/30 pt-4">
                 <div><p className="text-xs uppercase text-background/60">02 · Poster Design</p><h3 className="mt-1 font-display text-4xl md:text-5xl">The Dog Wedding</h3></div>
                 <span className="text-2xl"><ArrowMark /></span>
@@ -80,9 +80,9 @@ function Index() {
           <div className="mt-12 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
              {["Medical Catalogue", "Social Media Design"].map((item, i) => {
                const imageTile = item === "Medical Catalogue"
-                 ? { src: medicalCatalogueAsset.url, w: 972, h: 1220, alt: "Medical catalogue — Azoth Biotech Cordyceps militaris technical data sheet cover" }
+                 ? { src: medicalCatalogueAsset, w: 972, h: 1220, alt: "Medical catalogue — Azoth Biotech Cordyceps militaris technical data sheet cover" }
                  : item === "Social Media Design"
-                 ? { src: smvitPosterAsset.url, w: 1080, h: 1350, alt: "Social media poster design for SMVIT Debsoc — Sneha Verma, core adjudicator announcement" }
+                 ? { src: smvitPosterAsset, w: 1080, h: 1350, alt: "Social media poster design for SMVIT Debsoc — Sneha Verma, core adjudicator announcement" }
                  : null;
                return imageTile ? (
                  <div key={item} className="group relative overflow-hidden border-b border-r border-border">
@@ -111,7 +111,7 @@ function Index() {
             <p className="mt-7 text-sm leading-relaxed text-muted-foreground">I’m interested in graphic design, branding, editorial layouts, posters and visual storytelling. I like experimenting with typography, composition and color while keeping the final design clear and purposeful.</p>
             <p className="mt-10 -rotate-2 font-display text-xl italic text-wine">currently designing things &amp; collecting fonts ↗</p>
           </div>
-          <figure className="relative md:col-span-3"><img src={portraitAsset.url} width={688} height={917} loading="lazy" alt="Portrait of Ananya Singh" className="h-auto w-full" /><figcaption className="mt-2 text-[10px] uppercase text-muted-foreground">At the desk, probably changing the typeface again.</figcaption></figure>
+          <figure className="relative md:col-span-3"><img src={portraitAsset} width={688} height={917} loading="lazy" alt="Portrait of Ananya Singh" className="h-auto w-full" /><figcaption className="mt-2 text-[10px] uppercase text-muted-foreground">At the desk, probably changing the typeface again.</figcaption></figure>
         </div>
       </section>
 
