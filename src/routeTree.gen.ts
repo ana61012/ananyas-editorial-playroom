@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorkCrockeyRouteImport } from './routes/work.crockey'
+import { Route as WorkDogWeddingRouteImport } from './routes/work.dog-wedding'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkCrockeyRoute = WorkCrockeyRouteImport.update({
+  id: '/work/crockey',
+  path: '/work/crockey',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkDogWeddingRoute = WorkDogWeddingRouteImport.update({
+  id: '/work/dog-wedding',
+  path: '/work/dog-wedding',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/work/crockey': typeof WorkCrockeyRoute
+  '/work/dog-wedding': typeof WorkDogWeddingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/work/crockey': typeof WorkCrockeyRoute
+  '/work/dog-wedding': typeof WorkDogWeddingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/work/crockey': typeof WorkCrockeyRoute
+  '/work/dog-wedding': typeof WorkDogWeddingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/work/crockey' | '/work/dog-wedding'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/work/crockey' | '/work/dog-wedding'
+  id: '__root__' | '/' | '/work/crockey' | '/work/dog-wedding'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  WorkCrockeyRoute: typeof WorkCrockeyRoute
+  WorkDogWeddingRoute: typeof WorkDogWeddingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/crockey': {
+      id: '/work/crockey'
+      path: '/work/crockey'
+      fullPath: '/work/crockey'
+      preLoaderRoute: typeof WorkCrockeyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/dog-wedding': {
+      id: '/work/dog-wedding'
+      path: '/work/dog-wedding'
+      fullPath: '/work/dog-wedding'
+      preLoaderRoute: typeof WorkDogWeddingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  WorkCrockeyRoute: WorkCrockeyRoute,
+  WorkDogWeddingRoute: WorkDogWeddingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
