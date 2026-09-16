@@ -76,7 +76,7 @@ function Index() {
           <p className="text-xs uppercase text-muted-foreground">The archive is growing</p>
            <h2 className="mt-3 font-display text-5xl md:text-7xl">More work........<em></em></h2>
           <div className="mt-12 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
-            {["Brand Identity", "Social Media Design", "Editorial Design", "Illustration"].map((item, i) => (
+             {["Medical Catalogue", "Social Media Design", "Editorial Design", "Illustration"].map((item, i) => (
               <div key={item} className="group flex aspect-[4/3] flex-col justify-between border-b border-r border-border p-5 transition-colors hover:bg-peach/40 md:aspect-[3/4] md:p-7">
                 <span className="text-xs text-muted-foreground">0{i + 3}</span>
                 <div><h3 className="font-display text-3xl">{item}</h3><p className="mt-2 text-xs uppercase text-muted-foreground">Coming Soon</p></div>
