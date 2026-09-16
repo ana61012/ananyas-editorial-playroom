@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import crockeyProjectAsset from "@/assets/crockey-real-project.png.asset.json";
-import dogPoster from "@/assets/dog-wedding-poster.jpg";
+import dogWeddingAsset from "@/assets/dog-wedding-real.png.asset.json";
 import portrait from "@/assets/ananya-portrait.jpg";
 import { ArrowMark, DogDoodle, PageShell } from "@/components/portfolio-shell";
 
