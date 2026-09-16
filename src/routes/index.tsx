@@ -60,7 +60,7 @@ function Index() {
               <p className="mt-3 max-w-lg text-sm leading-relaxed text-background/70">A catalogue designed to bring products, visuals and information together through a clean editorial layout.</p>
             </Link>
             <Link to="/work/dog-wedding" className="group md:col-span-4 md:col-start-9 md:mt-40">
-              <div className="overflow-hidden bg-paper"><img src={dogWeddingAsset.url} width={958} height={977} loading="lazy" alt="The Dog Wedding poster — two dogs in wedding attire under a floral arch" className="aspect-[958/977] w-full object-cover" /></div>
+              <div className="overflow-hidden bg-paper"><img src={dogWeddingAsset.url} width={748} height={977} loading="lazy" alt="The Dog Wedding poster — two dogs in wedding attire under a floral arch" className="aspect-[748/977] w-full object-cover" /></div>
               <div className="mt-5 flex items-start justify-between border-t border-background/30 pt-4">
                 <div><p className="text-xs uppercase text-background/60">02 · Poster Design</p><h3 className="mt-1 font-display text-4xl md:text-5xl">The Dog Wedding</h3></div>
                 <span className="text-2xl"><ArrowMark /></span>
