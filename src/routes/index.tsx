@@ -105,7 +105,7 @@ function Index() {
             <p className="mt-7 text-sm leading-relaxed text-muted-foreground">I’m interested in graphic design, branding, editorial layouts, posters and visual storytelling. I like experimenting with typography, composition and color while keeping the final design clear and purposeful.</p>
             <p className="mt-10 -rotate-2 font-display text-xl italic text-wine">currently designing things &amp; collecting fonts ↗</p>
           </div>
-          <figure className="relative md:col-span-3"><img src={portrait} width={1200} height={1504} loading="lazy" alt="Ananya Singh in her creative studio" className="aspect-[4/5] w-full object-cover grayscale-[15%]" /><figcaption className="mt-2 text-[10px] uppercase text-muted-foreground">At the desk, probably changing the typeface again.</figcaption></figure>
+          <figure className="relative md:col-span-3"><img src={portraitAsset.url} width={688} height={917} loading="lazy" alt="Portrait of Ananya Singh" className="h-auto w-full" /><figcaption className="mt-2 text-[10px] uppercase text-muted-foreground">At the desk, probably changing the typeface again.</figcaption></figure>
         </div>
       </section>
 
