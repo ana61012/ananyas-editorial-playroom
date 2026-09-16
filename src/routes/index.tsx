@@ -54,7 +54,7 @@ function Index() {
             <Link to="/work/crockey" className="group md:col-span-8">
               <div className="overflow-hidden bg-paper"><img src={crockeyProjectAsset.url} width={969} height={1214} alt="Crockey curated ceramic collection with blossom branches" className="aspect-[969/1214] w-full object-cover" /></div>
               <div className="mt-5 flex items-start justify-between border-t border-background/30 pt-4">
-                <div><p className="text-xs uppercase text-background/60">01 · Catalogue Design</p><h3 className="mt-1 font-display text-4xl md:text-6xl">Crockey</h3></div>
+                 <div><p className="text-xs uppercase text-background/60">01 · Catalogue Design</p><h3 className="mt-1 font-display text-4xl md:text-6xl">Crockey for&nbsp;</h3></div>
                 <span className="text-2xl"><ArrowMark /></span>
               </div>
               <p className="mt-3 max-w-lg text-sm leading-relaxed text-background/70">A catalogue designed to bring products, visuals and information together through a clean editorial layout.</p>
