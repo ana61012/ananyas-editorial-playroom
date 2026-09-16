@@ -123,7 +123,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="px-5 py-20 md:px-10 md:py-24"><div className="mx-auto max-w-screen-2xl"><p className="text-xs uppercase text-muted-foreground">Selected capabilities</p><div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 font-display text-3xl leading-tight md:text-5xl">{["Graphic Design", "Branding", "Catalogue Design", "Poster Design", "Typography", "Layout Design", "Visual Identity", "Social Media Design", "Figma", "\n"].map((s,i)=><span key={s} className={i%3===1?"italic text-wine":""}>{s}{i<8&&<span className="ml-7 text-border">/</span>}</span>)}</div></div></section>
+       <section className="px-5 py-20 md:px-10 md:py-24"><div className="mx-auto max-w-screen-2xl"><p className="text-xs uppercase text-muted-foreground">Selected capabilities</p><div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 font-display text-3xl leading-tight md:text-5xl">{["Graphic Design", "Branding", "Catalogue Design", "Poster Design", "Typography", "Layout Design", "Visual Identity", "Social Media Design", "\n", "\n"].map((s,i)=><span key={s} className={i%3===1?"italic text-wine":""}>{s}{i<8&&<span className="ml-7 text-border">/</span>}</span>)}</div></div></section>
 
       <section className="border-t border-border px-5 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-screen-2xl">
