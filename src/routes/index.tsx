@@ -3,6 +3,7 @@ import crockeyProjectAsset from "@/assets/crockey-real-project.png.asset.json";
 import dogWeddingAsset from "@/assets/dog-wedding-real.png.asset.json";
 import portraitAsset from "@/assets/ananya-photo.jpg.asset.json";
 import smvitPosterAsset from "@/assets/smvit-poster.jpg.asset.json";
+import medicalCatalogueAsset from "@/assets/medical-catalogue.png.asset.json";
 import { ArrowMark, DogDoodle, PageShell } from "@/components/portfolio-shell";
 
 export const Route = createFileRoute("/")({
