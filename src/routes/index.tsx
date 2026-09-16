@@ -49,7 +49,7 @@ function Index() {
         <div className="mx-auto max-w-screen-2xl">
           <div className="flex items-end justify-between border-b border-background/30 pb-5">
             <h2 className="font-display text-5xl md:text-8xl">Selected <em>Work</em></h2>
-            <p className="text-xs uppercase">2024—2026</p>
+            <p className="text-xs uppercase">{"\n"}</p>
           </div>
           <div className="mt-12 grid gap-16 md:grid-cols-12 md:gap-y-28">
             <Link to="/work/crockey" className="group md:col-span-8">
