@@ -76,7 +76,7 @@ function Index() {
       <section className="px-5 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-screen-2xl">
           <p className="text-xs uppercase text-muted-foreground">The archive is growing</p>
-           <h2 className="mt-3 font-display text-5xl md:text-7xl">More work........<em></em></h2>
+          <h2 className="mt-3 font-display text-5xl md:text-7xl">More work........<em></em></h2>
           <div className="mt-12 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
              {["Medical Catalogue", "Social Media Design"].map((item, i) => {
                const imageTile = item === "Medical Catalogue"
@@ -141,28 +141,24 @@ function Index() {
               </thead>
               <tbody className="font-display text-3xl md:text-5xl">
                 <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">01</span>Poster or key visual</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹8,000</td>
+                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">01</span>Poster or flyer</td>
+                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹1,000</td>
                 </tr>
                 <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">02</span>Social media design</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹10,000</td>
+                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">02</span>Social media post</td>
+                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹700</td>
                 </tr>
                 <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">03</span>Catalogue or publication</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹18,000</td>
+                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">03</span>Catalogue</td>
+                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹2,500</td>
                 </tr>
                 <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">04</span>Logo suite</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹20,000</td>
+                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">04</span>Presentation design</td>
+                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹1,500</td>
                 </tr>
                 <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">05</span>Full visual identity</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹30,000</td>
-                </tr>
-                <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">06</span>Custom project</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">Let’s talk</td>
+                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">05</span>5–10 social media posts</td>
+                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹3,000 – ₹6,000</td>
                 </tr>
               </tbody>
             </table>
