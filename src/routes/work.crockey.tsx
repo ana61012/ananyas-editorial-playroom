@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import crockeyProjectAsset from "@/assets/crockey-real-project.png.asset.json";
+import spreadOneAsset from "@/assets/crockey-spread-1.png.asset.json";
+import spreadTwoAsset from "@/assets/crockey-spread-2.png.asset.json";
 import { PageShell } from "@/components/portfolio-shell";
 
 export const Route = createFileRoute("/work/crockey")({
