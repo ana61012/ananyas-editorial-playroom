@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import crockeyProjectAsset from "@/assets/crockey-real-project.png.asset.json";
-import dogPoster from "@/assets/dog-wedding-poster.jpg";
+import dogWeddingAsset from "@/assets/dog-wedding-real.png.asset.json";
 import portrait from "@/assets/ananya-portrait.jpg";
 import { ArrowMark, DogDoodle, PageShell } from "@/components/portfolio-shell";
 
@@ -60,7 +60,7 @@ function Index() {
               <p className="mt-3 max-w-lg text-sm leading-relaxed text-background/70">A catalogue designed to bring products, visuals and information together through a clean editorial layout.</p>
             </Link>
             <Link to="/work/dog-wedding" className="group md:col-span-4 md:col-start-9 md:mt-40">
-              <div className="overflow-hidden bg-paper"><img src={dogPoster} width={1200} height={1600} loading="lazy" alt="Illustrated Dog Wedding poster" className="aspect-[3/4] w-full object-cover transition duration-700 group-hover:scale-[1.025]" /></div>
+              <div className="overflow-hidden bg-paper"><img src={dogWeddingAsset.url} width={748} height={977} loading="lazy" alt="The Dog Wedding poster — two dogs in wedding attire under a floral arch" className="aspect-[748/977] w-full object-cover" /></div>
               <div className="mt-5 flex items-start justify-between border-t border-background/30 pt-4">
                 <div><p className="text-xs uppercase text-background/60">02 · Poster Design</p><h3 className="mt-1 font-display text-4xl md:text-5xl">The Dog Wedding</h3></div>
                 <span className="text-2xl"><ArrowMark /></span>
