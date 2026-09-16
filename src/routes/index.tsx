@@ -108,6 +108,31 @@ function Index() {
 
       <section className="px-5 py-20 md:px-10 md:py-24"><div className="mx-auto max-w-screen-2xl"><p className="text-xs uppercase text-muted-foreground">Selected capabilities</p><div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 font-display text-3xl leading-tight md:text-5xl">{["Graphic Design", "Branding", "Catalogue Design", "Poster Design", "Typography", "Layout Design", "Visual Identity", "Social Media Design", "Figma", "Adobe Creative Suite"].map((s,i)=><span key={s} className={i%3===1?"italic text-wine":""}>{s}{i<9&&<span className="ml-7 text-border">/</span>}</span>)}</div></div></section>
 
+      <section className="border-t border-border px-5 py-20 md:px-10 md:py-28">
+        <div className="mx-auto max-w-screen-2xl">
+          <div className="grid gap-8 md:grid-cols-2 md:items-end">
+            <div><p className="text-xs uppercase text-muted-foreground">Ways to work together</p><h2 className="mt-4 font-display text-6xl leading-none md:text-8xl">Pick a good<br /><em>starting point.</em></h2></div>
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground md:justify-self-end">Every project is shaped around what you need. These are flexible starting packages; final quotes follow a quick conversation.</p>
+          </div>
+          <div className="mt-14 grid border-l border-t border-border lg:grid-cols-3">
+            {[
+              { number: "01", name: "The Quick Edit", price: "From ₹8,000", note: "For one focused piece that needs to look considered and complete.", items: ["Poster or key visual", "2 creative directions", "Final print & digital files"] },
+              { number: "02", name: "The Editorial", price: "From ₹18,000", note: "For stories, products and information that deserve room to breathe.", items: ["Catalogue or publication", "Layout system", "Up to 16 designed pages"] },
+              { number: "03", name: "The Identity", price: "From ₹30,000", note: "For a new idea ready to become a clear, memorable visual world.", items: ["Logo suite", "Colour & typography system", "Essential brand guidelines"] },
+            ].map((offer) => (
+              <article key={offer.name} className="flex min-h-[31rem] flex-col border-b border-r border-border p-6 md:p-8">
+                <div className="flex items-center justify-between text-xs uppercase text-muted-foreground"><span>{offer.number}</span><span>Starting at</span></div>
+                <h3 className="mt-14 font-display text-4xl md:text-5xl">{offer.name}</h3>
+                <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">{offer.note}</p>
+                <ul className="mt-8 space-y-3 border-t border-border pt-5 text-xs uppercase text-muted-foreground">{offer.items.map((item) => <li key={item}>— {item}</li>)}</ul>
+                <div className="mt-auto flex items-end justify-between pt-12"><p className="font-display text-3xl text-wine">{offer.price}</p><a href="mailto:ananya61012@gmail.com?subject=Project%20enquiry" aria-label={`Enquire about ${offer.name}`} className="flex size-11 items-center justify-center border border-wine text-xl text-wine transition-colors hover:bg-wine hover:text-primary-foreground">↗</a></div>
+              </article>
+            ))}
+          </div>
+          <p className="mt-5 text-xs text-muted-foreground">Need something different? Tell me what you have in mind and I’ll put together a custom quote.</p>
+        </div>
+      </section>
+
       <section id="contact" className="bg-wine px-5 py-20 text-primary-foreground md:px-10 md:py-28">
         <div className="mx-auto max-w-screen-2xl"><p className="text-xs uppercase text-primary-foreground/65">Have an idea? Say hello.</p><h2 className="reveal-text mt-8 max-w-6xl font-display text-[15vw] leading-[0.8] md:text-[10vw]">Let’s make<br /><em>something good.</em></h2><div className="mt-16 grid gap-8 border-t border-primary-foreground/30 pt-8 md:grid-cols-2"><p className="max-w-md text-sm leading-relaxed text-primary-foreground/75">Have a project, collaboration, or simply an interesting idea? I'd love to hear about it.</p><div><a href="mailto:ananya61012@gmail.com" className="font-display text-2xl underline decoration-1 underline-offset-8 md:text-4xl">ananya61012@gmail.com</a><div className="mt-10 flex flex-wrap gap-3"><a className="border border-primary-foreground/50 px-5 py-3 text-xs uppercase transition hover:bg-primary-foreground hover:text-wine" href="mailto:ananya61012@gmail.com">Email me</a><a className="border border-primary-foreground/50 px-5 py-3 text-xs uppercase transition hover:bg-primary-foreground hover:text-wine" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a><a className="border border-primary-foreground/50 px-5 py-3 text-xs uppercase transition hover:bg-primary-foreground hover:text-wine" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></div></div></div></div>
       </section>
