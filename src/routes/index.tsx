@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import crockeyHero from "@/assets/crockey-hero.jpg";
+import crockeyProjectAsset from "@/assets/crockey-real-project.png.asset.json";
 import dogPoster from "@/assets/dog-wedding-poster.jpg";
 import portrait from "@/assets/ananya-portrait.jpg";
 import { ArrowMark, DogDoodle, PageShell } from "@/components/portfolio-shell";
@@ -52,7 +52,7 @@ function Index() {
           </div>
           <div className="mt-12 grid gap-16 md:grid-cols-12 md:gap-y-28">
             <Link to="/work/crockey" className="group md:col-span-8">
-              <div className="overflow-hidden bg-paper"><img src={crockeyHero} width={1600} height={1200} alt="Crockey catalogue mockups featuring ceramic tableware" className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.025]" /></div>
+              <div className="overflow-hidden bg-paper"><img src={crockeyProjectAsset.url} width={768} height={963} alt="Crockey curated ceramic collection with blossom branches" className="aspect-[4/3] w-full object-cover transition-all duration-700 group-hover:scale-100 group-hover:object-contain" /></div>
               <div className="mt-5 flex items-start justify-between border-t border-background/30 pt-4">
                 <div><p className="text-xs uppercase text-background/60">01 · Catalogue Design</p><h3 className="mt-1 font-display text-4xl md:text-6xl">Crockey</h3></div>
                 <span className="text-2xl"><ArrowMark /></span>
