@@ -79,7 +79,7 @@ function Index() {
              {["Medical Catalogue", "Social Media Design", "Editorial Design", "Illustration"].map((item, i) => (
               <div key={item} className="group flex aspect-[4/3] flex-col justify-between border-b border-r border-border p-5 transition-colors hover:bg-peach/40 md:aspect-[3/4] md:p-7">
                 <span className="text-xs text-muted-foreground">0{i + 3}</span>
-                <div><h3 className="font-display text-3xl">{item}</h3><p className="mt-2 text-xs uppercase text-muted-foreground">Coming Soon</p></div>
+                 <div><h3 className="font-display text-3xl">{item}</h3><p className="mt-2 text-xs uppercase text-muted-foreground">{"\n"}</p></div>
               </div>
             ))}
           </div>
