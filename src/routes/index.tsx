@@ -125,48 +125,6 @@ function Index() {
 
        <section className="px-5 py-20 md:px-10 md:py-24"><div className="mx-auto max-w-screen-2xl"><p className="text-xs uppercase text-muted-foreground">Selected capabilities</p><div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 font-display text-3xl leading-tight md:text-5xl">{["Graphic Design/\n", "Branding/\n", "Catalogue Design/\n", "Poster Design/\n", "Typography/\n", "Layout Design/\n", "Visual Identity/\n", "Social Media Design\n\n"].map((s,i)=><span key={s} className={i%3===1?"italic text-wine":""}>{s}</span>)}</div></div></section>
 
-      <section className="border-t border-border px-5 py-20 md:px-10 md:py-28">
-        <div className="mx-auto max-w-screen-2xl">
-          <div className="grid gap-8 md:grid-cols-2 md:items-end">
-            <div><p className="text-xs uppercase text-muted-foreground">Ways to work together</p><h2 className="mt-4 font-display text-6xl leading-none md:text-8xl">Pick a good<br /><em>starting point.</em></h2></div>
-            <p className="max-w-md text-sm leading-relaxed text-muted-foreground md:justify-self-end">Every project is shaped around what you need. Final quotes follow a quick conversation.</p>
-          </div>
-          <div className="mt-14 overflow-x-auto border-t border-border">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b border-border">
-                  <th className="py-4 pr-6 text-left text-xs uppercase text-muted-foreground md:py-6 md:pr-10">Service</th>
-                  <th className="py-4 pl-6 text-right text-xs uppercase text-muted-foreground md:py-6 md:pl-10">Starting at</th>
-                </tr>
-              </thead>
-              <tbody className="font-display text-3xl md:text-5xl">
-                <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">01</span>Poster or flyer</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹1,000</td>
-                </tr>
-                <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">02</span>Social media post</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹700</td>
-                </tr>
-                <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">03</span>Catalogue</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹2,500</td>
-                </tr>
-                <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">04</span>Presentation design</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹1,500</td>
-                </tr>
-                <tr className="border-b border-border">
-                  <td className="py-5 pr-6 md:py-8 md:pr-10"><span className="mr-3 text-xs uppercase text-muted-foreground">05</span>5–10 social media posts</td>
-                  <td className="py-5 pl-6 text-right text-wine md:py-8 md:pl-10">₹3,000 – ₹6,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-5 text-xs text-muted-foreground">Need something different? Tell me what you have in mind and I’ll put together a custom quote.</p>
-        </div>
-      </section>
-
       <section id="contact" className="bg-wine px-5 py-20 text-primary-foreground md:px-10 md:py-28">
         <div className="mx-auto max-w-screen-2xl"><p className="text-xs uppercase text-primary-foreground/65">Have an idea? Say hello.</p><h2 className="reveal-text mt-8 max-w-6xl font-display text-[15vw] leading-[0.8] md:text-[10vw]">Let’s make<br /><em>something good.</em></h2><div className="mt-16 grid gap-8 border-t border-primary-foreground/30 pt-8 md:grid-cols-2"><p className="max-w-md text-sm leading-relaxed text-primary-foreground/75">Have a project, collaboration, or simply an interesting idea? I'd love to hear about it.</p><div><a href="mailto:ananya61012@gmail.com" className="font-display text-2xl underline decoration-1 underline-offset-8 md:text-4xl">ananya61012@gmail.com</a></div></div></div>
       </section>
